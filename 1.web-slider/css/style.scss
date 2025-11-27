@@ -54,7 +54,6 @@ body {
             &:hover {
                 color: #007bff;
             }
-
         }
     }
 
@@ -75,6 +74,46 @@ body {
 
             &.active {
                 background-color: #007bff;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        width: 90%;
+
+        &-container {
+            height: 300px;
+        }
+
+        &-controls {
+            flex-direction: column;
+            align-items: center;
+
+            &__btn {
+                margin: 10px 0;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        width: 100%;
+
+        &-container {
+            height: 200px;
+        }
+
+        &-dots {
+            flex-wrap: wrap;
+
+            &__dot {
+                width: 10px;
+                height: 10px;
+                margin: 5px;
             }
         }
     }

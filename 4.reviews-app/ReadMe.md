@@ -39,7 +39,7 @@ http://localhost:3000
 
 ## Структура проекта
 ```
-reviews-app/  
+4.reviews-app/  
 ├── public/  
 │   ├── css/  
 │   │   ├── _vars.scss  
@@ -62,5 +62,5 @@ reviews-app/
 
 ## Контакты
 * Email: ilya.karpov.93@mail.ru
-* GitHub: https://github.com/bullet554/portfolio.git
+* GitHub: https://github.com/bullet554
 * Phone: +79372382299
