@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-слайдер</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slider-container">
+            <img src="./img/gta-6_1.jpg" class="slider-image active" alt="Изображение 1">
+            <img src="./img/gta-6_2.jpg" class="slider-image" alt="Изображение 2">
+            <img src="./img/gta-6_3.jpg" class="slider-image" alt="Изображение 3">
+            <img src="./img/gta-6_4.jpg" class="slider-image" alt="Изображение 4">
+            <!-- <img src="./img/gta-6_5.jpg" class="slider-image" alt="Изображение 5"> // Демонстрация универсальности -->
+        </div>
+
+        <div class="slider-controls">
+            <button class="slider-controls__btn prev-btn">Предыдущее изображение</button>
+            <button class="slider-controls__btn next-btn">Следующее изображение</button>
+        </div>
+
+        <div class="slider-dots">
+            <span class="slider-dots__dot dot active" data-slide="0"></span>
+            <span class="slider-dots__dot dot" data-slide="1"></span>
+            <span class="slider-dots__dot dot" data-slide="2"></span>
+            <span class="slider-dots__dot dot" data-slide="3"></span>
+            <!-- <span class="slider-dots__dot dot" data-slide="4"></span> // Демонстрация универсальности -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
