@@ -18,17 +18,21 @@
 ## Установка и запуск
 1. Клонируйте репозиторий:
 ```
-git clone 
+git clone https://github.com/bullet554/portfolio.git
 ```
-2. Установите зависимости:
+2. Перейдите в проект:
+```
+cd ./4.reviews-app/
+```
+3. Установите зависимости:
 ```
 npm install
 ```
-3. Запустите сервер:
+4. Запустите сервер:
 ```
 node start
 ```
-4. Откройте в браузере:
+5. Откройте в браузере:
 ```
 http://localhost:3000
 ```
@@ -58,5 +62,5 @@ reviews-app/
 
 ## Контакты
 * Email: ilya.karpov.93@mail.ru
-* GitHub: 
+* GitHub: https://github.com/bullet554/portfolio.git
 * Phone: +79372382299

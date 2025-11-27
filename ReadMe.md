@@ -48,5 +48,5 @@
 
 ## Контакты
 * Email: ilya.karpov.93@mail.ru
-* GitHub: 
+* GitHub: https://github.com/bullet554/portfolio.git
 * Phone: +79372382299
