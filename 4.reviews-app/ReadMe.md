@@ -49,7 +49,7 @@ npm install
 ```
 4. Запустите сервер:
 ```
-node start
+npm start
 ```
 5. Откройте в браузере:
 ```
@@ -91,3 +91,6 @@ http://localhost:3000
 * Email: ilya.karpov.93@mail.ru
 * GitHub: https://github.com/bullet554
 * Phone: +79372382299
+
+## Лицензия
+ISC

@@ -1,14 +1,13 @@
 {
-  "name": "reviews",
-  "version": "1.0.0",
+  "name": "reviews-app",
+  "version": "1.0.1",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ilya Karpov",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
