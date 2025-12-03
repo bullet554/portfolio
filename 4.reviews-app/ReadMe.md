@@ -91,6 +91,3 @@ http://localhost:3000
 * Email: ilya.karpov.93@mail.ru
 * GitHub: https://github.com/bullet554
 * Phone: +79372382299
-
-## Лицензия
-ISC
