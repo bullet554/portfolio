@@ -1,0 +1,21 @@
+.app {
+  padding: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.app.light {
+  background-color: #ffffff;
+  color: #333333;
+}
+.app.dark {
+  background-color: #222222;
+  color: #ffffff;
+}
+.app__title {
+  margin: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-select {
+  margin-bottom: 16px;
+}/*# sourceMappingURL=index.css.map */

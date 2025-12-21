@@ -1,4 +1,4 @@
-import { ADD_TODO, TOGGLE_TODO } from "../actions/todoActions";
+import { ADD_TODO, TOGGLE_TODO, DELETE_TODO } from "../actions/todoActions";
 
 const initialState = [];
 
@@ -10,6 +10,13 @@ const todosReducer = (state = initialState, action) => {
             return state.map(todo =>
                 todo.id === action.payload.id ? { ...todo, completed: !todo.completed } : todo
             );
+        case DELETE_TODO:
+            const commentId = action.payload.id;
+            return state.filter(todo => todo.id !== commentId);
+
+        /* state.map(todo =>
+            todo.id === action.payload.id ? { ...todo, completed: !todo.completed } : todo
+        ); */
         default:
             return state;
     }

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { FilterContext } from "../contexts/FilterContext";
+import Form from 'react-bootstrap/Form';
 
 const TodoFilter = () => {
     const { filter, setFilter } = useContext(FilterContext);
@@ -9,11 +10,14 @@ const TodoFilter = () => {
     }
 
     return (
-        <select value={filter} onChange={handleChange}>
+        <Form.Select
+            aria-label="Default select example"
+            value={filter} onChange={handleChange}
+        >
             <option value="all">Все</option>
             <option value="completed">Выполненные</option>
             <option value="active">Активные</option>
-        </select>
+        </Form.Select>
     );
 }
 
