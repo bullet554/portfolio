@@ -31,9 +31,9 @@
     * **Технологии:** Node.js, Express, body-parser, HTML, CSS, JavaScript, Fetch API
     * **Путь:** ./5.bank-app/
 
-6. **Todo List с React и React Bootstrap**  
-   * **Описание:** Интерактивное приложение для управления задачами с сохранением в JSON в localStorage.  
-   * **Технологии:** React.js, React Bootstrap, JavaScript, JSON, localStorage
+6. **Todo List Fullstack Application**  
+   * **Описание:** Полнофункциональное веб-приложение с серверной частью на Node.js и интерфейсом на React.  
+   * **Технологии:** React.js, Redux Toolkit, React Bootstrap, Node.js, Express.js, Axios, SCSS, TypeScript, RTK Query
    * **Путь:** ./6.todo-list-react/
 
 
