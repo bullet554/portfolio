@@ -1,0 +1,22 @@
+[
+  {
+    "id": "3738d2f8-6f7a-475f-bbc9-88b916788c5d",
+    "title": "задача 1",
+    "completed": false
+  },
+  {
+    "id": "5f092255-3d12-4770-9c18-d8bf01581c56",
+    "title": "задача 2",
+    "completed": true
+  },
+  {
+    "id": "00bf4653-5be1-4dd7-b2fe-ee36c1c53c81",
+    "title": "задача 3",
+    "completed": false
+  },
+  {
+    "id": "c3c77068-a5da-4231-99bd-7eca1fc41f2c",
+    "title": "задача 4",
+    "completed": false
+  }
+]

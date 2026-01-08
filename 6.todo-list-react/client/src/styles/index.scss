@@ -6,10 +6,12 @@
         background-color: #ffffff;
         color: #333333;
     }
-    
+
     &.dark {
         background-color: #222222;
         color: #ffffff;
+        width: 100vh;
+        height: 100vh;
     }
 
     &__title {
@@ -21,4 +23,12 @@
 
 .form-select {
     margin-bottom: 16px;
+}
+
+.list-group.light {
+    background-color: #ffffff;
+}
+
+.list-group.dark {
+    background-color: #222222;
 }

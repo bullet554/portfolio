@@ -1,15 +1,19 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addTodo } from "../actions/todoActions";
+import { addTask } from "../slices/todoSlice";
 import { Form, Button, InputGroup } from 'react-bootstrap';
 
 const AddTodo = () => {
     const [text, setText] = useState('');
     const dispatch = useDispatch();
 
-    const handleAddTodo = () => {
-        dispatch(addTodo(text));
-        setText('');
+    const handleAddTodo = async () => {
+        try {
+            await dispatch(addTask({ text }));
+            setText('');
+        } catch (error) {
+            console.error('Ошибка при добавлении задачи:', error);
+        }
     }
 
     return (
@@ -20,6 +24,11 @@ const AddTodo = () => {
                     placeholder="Введите задачу..."
                     value={text}
                     onChange={(e) => setText(e.target.value)}
+                    onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                        handleAddTodo();
+                    }
+                }}
                 />
                 <Button variant="primary" onClick={handleAddTodo}>Добавить</Button>
             </InputGroup>

@@ -1,6 +1,5 @@
-import React from 'react';
 import { useDispatch } from 'react-redux';
-import { switchTheme } from '../actions/themeActions';
+import { switchTheme } from '../slices/themeSlice';
 import { Button } from 'react-bootstrap';
 
 const ThemeSwitcher = () => {

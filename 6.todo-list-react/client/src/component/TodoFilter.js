@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { FilterContext } from "../contexts/FilterContext";
 import Form from 'react-bootstrap/Form';
 
