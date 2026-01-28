@@ -1,0 +1,49 @@
+@use '../../../styles/vars' as *;
+
+.breadcrumbs {
+    background-color: #F8F3F4;
+    height: 148px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+        display: flex;
+        align-items: center;
+
+        &_title {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            color: $colorSelectSite;
+        }
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__link {
+        color: #636363;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &:not(:last-child)::after {
+            content: '/';
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        &:last-child {
+            font-weight: 700;
+            color: $colorSelectSite;
+        }
+    }
+}

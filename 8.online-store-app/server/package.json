@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@supabase/auth-helpers-react": "^0.15.0",
+    "@supabase/supabase-js": "^2.90.1",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "express-validator": "^7.3.1",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "path": "^0.12.7"
+  },
+  "description": "",
+  "keywords": [],
+  "author": "Ilya Kaprov",
+  "license": "ISC"
+}

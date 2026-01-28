@@ -1,0 +1,145 @@
+@charset "UTF-8";
+.regist {
+  padding-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.regist-left {
+  width: 360px;
+}
+.regist-left__title {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.regist-left__input {
+  width: 360px;
+  border: 1px solid #A4A4A4;
+  padding: 13px 16px 17px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.regist-left__gender-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 31px;
+  margin-bottom: 33px;
+}
+.regist-left__gender {
+  color: #222;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.regist-left__gender label {
+  margin-left: 10px;
+}
+.regist-left__gender input[type=radio] {
+  display: none;
+}
+.regist-left__gender input[type=radio] + span {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  border: 1px solid #A4A4A4;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+.regist-left__gender input[type=radio]:checked + span {
+  background-color: #F16D7F;
+}
+.regist-left__gender_third-gender {
+  display: none;
+}
+.regist-left__pass-info {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 15px;
+  margin-bottom: 39px;
+}
+.regist-left__button_style {
+  padding: 16px 29px;
+  background-color: #F16D7F;
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 96px;
+  border: none;
+}
+.regist-left__button_svg {
+  padding-left: 20px;
+}
+.regist-right {
+  width: 652px;
+}
+.regist-right__title {
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.regist-right__info {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.regist-right__list {
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style-position: inside;
+  list-style-type: none;
+}
+.regist-right__list_item {
+  padding-bottom: 16px;
+}
+.regist-right__list_item::before {
+  content: url(../../assets/img/ui/marker.svg);
+  margin-right: 22px;
+}
+
+.error {
+  border-color: red;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+/* Дополнительно можно добавить анимацию появления ошибок */
+.error-message.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.error-message {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=Registration.css.map */

@@ -1,0 +1,36 @@
+@use '../vars' as *;
+
+.pagination {
+
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    width: min-content;
+    margin: auto;
+
+    &__content {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+        margin: 15px;
+    }
+
+    &__btn {
+        border: none;
+        background: none;
+        color: #C4C4C4;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+        &_active {
+            color: $colorSelectSite;
+        }
+    }
+
+    &__btn-arrow {
+        height: 14px;
+    }
+}

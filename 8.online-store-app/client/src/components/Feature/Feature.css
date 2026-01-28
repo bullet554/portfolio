@@ -1,0 +1,40 @@
+.feature {
+  margin-top: 96px;
+  height: 340px;
+  position: relative;
+  z-index: 1;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.feature::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #222;
+}
+.feature__content {
+  text-align: center;
+  width: 360px;
+}
+.feature__name {
+  padding-top: 20px;
+  color: #FBFBFB;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.feature__info {
+  padding-top: 16px;
+  color: #FBFBFB;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=Feature.css.map */

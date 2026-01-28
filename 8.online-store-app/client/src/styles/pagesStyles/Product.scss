@@ -1,0 +1,141 @@
+@use '../vars' as *;
+
+.product-page {
+
+    &__show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__view {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__arrow {
+        width: 47px;
+        height: 47px;
+        background-color: rgba(42, 42, 42, 0.15);
+        border: none;
+
+        &_icon {
+            padding: 8px;
+        }
+
+        &:hover {
+            path {
+                fill: $colorSelectSite;
+            }
+        }
+    }
+
+    &__slide {
+        margin-top: 11px;
+        margin-bottom: 42px;
+
+        &_img {
+            height: 777px;
+        }
+    }
+
+    &__content {
+        padding-top: 65px;
+        padding-bottom: 65px;
+        display: flex;
+        flex-direction: column;
+        // flex-wrap: wrap;
+        // align-content: center;
+        align-items: center;
+        border: 1px solid #EAEAEA;
+    }
+
+    &__info {
+        &_subtitle {
+            color: $colorSelectSite;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+
+        &_line {
+            margin: 12px auto;
+            width: 63px;
+            height: 3px;
+            background-color: $colorSelectSite;
+        }
+
+        &_title {
+            margin-bottom: 48px;
+            color: #4D4D4D;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+
+        &_text {
+            width: 565px;
+            margin-bottom: 32px;
+            color: #5E5E5E;
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &_price {
+            color: $colorSelectSite;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-align: center;
+        }
+    }
+
+    &__line {
+        margin: 65px auto;
+        width: 641px;
+        height: 1px;
+        background-color: #EAEAEA;
+    }
+
+    &__choose {
+        padding: 0 0 48px 0;
+        gap: 23px;
+    }
+
+    &__add-btn {
+        width: 212px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding-left: 24px;
+        cursor: pointer;
+
+        &_cart {
+            path {
+                fill: $colorSelectSite;
+                transition: 0.3s;
+            }
+        }
+
+        &:hover {
+            path {
+                fill: #FFF;
+            }
+        }
+    }
+
+    &__offers {
+        padding-top: 129px;
+        padding-bottom: 129px;
+        margin: 0;
+    }
+}

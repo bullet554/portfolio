@@ -1,0 +1,116 @@
+.filter-sort {
+  padding-top: 51px;
+  padding-bottom: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 6;
+}
+
+.filter {
+  position: absolute;
+  box-sizing: border-box;
+  padding-left: 0;
+  z-index: 599;
+  cursor: pointer;
+}
+.filter[open] {
+  width: 360px;
+  margin-top: -13px;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+}
+.filter[open] .filter__heading {
+  padding: 13px 16px 16px;
+  color: #F16D7F;
+}
+.filter[open] path {
+  fill: #F16D7F;
+}
+.filter__summary {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.filter__heading {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.filter__item {
+  margin-top: 16px;
+}
+.filter__item__heading {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 8px 11px 11px 11px;
+  border-bottom: 1px solid #EBEBEB;
+  border-left: 5px solid #F16D7F;
+}
+.filter__item[open] .filter__item__heading {
+  color: #F16D7F;
+}
+.filter__link-box {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding: 24px 16px;
+}
+.filter__link {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.filter__link:hover {
+  color: #F16D7F;
+}
+
+.sort {
+  padding-left: 390px;
+  display: flex;
+  gap: 28px;
+  cursor: pointer;
+}
+.sort__dtls {
+  position: relative;
+}
+.sort__dtls__title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  list-style: none;
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sort__dtls__box {
+  position: absolute;
+  left: -9px;
+  top: 22px;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+  padding: 7px 9px 11px;
+  block-size: border-box;
+  width: 79px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 6;
+}
+.sort__dtls__box input {
+  margin-right: 6px;
+}
+.sort__dtls__box_trending-now {
+  width: 90px;
+}
+.sort__dtls__box_price {
+  width: 110px;
+}/*# sourceMappingURL=SortFilter.css.map */

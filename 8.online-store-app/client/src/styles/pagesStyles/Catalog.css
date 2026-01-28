@@ -1,0 +1,30 @@
+.pagination {
+  border: 1px solid #EBEBEB;
+  border-radius: 5px;
+  width: -moz-min-content;
+  width: min-content;
+  margin: auto;
+}
+.pagination__content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  margin: 15px;
+}
+.pagination__btn {
+  border: none;
+  background: none;
+  color: #C4C4C4;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.pagination__btn_active {
+  color: #F16D7F;
+}
+.pagination__btn-arrow {
+  height: 14px;
+}/*# sourceMappingURL=Catalog.css.map */

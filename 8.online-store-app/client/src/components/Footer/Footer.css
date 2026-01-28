@@ -1,0 +1,19 @@
+.footer {
+  background-color: #222;
+  height: 79px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__text {
+  color: #FBFBFB;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.footer__right {
+  display: flex;
+  gap: 7px;
+}/*# sourceMappingURL=Footer.css.map */

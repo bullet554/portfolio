@@ -1,0 +1,23 @@
+@use '../../styles/vars' as *;
+
+.footer {
+    background-color: $bgColorSite;
+    height: 79px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+        color: #FBFBFB;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__right {
+        display: flex;
+        gap: 7px;
+    }
+}

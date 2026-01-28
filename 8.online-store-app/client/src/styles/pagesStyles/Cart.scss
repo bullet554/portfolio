@@ -1,0 +1,254 @@
+@use '../vars' as *;
+
+.cart {
+    &-page {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 96px;
+    }
+
+    &-product {
+
+        &__loader {
+            width: 100%;
+            min-height: 240px;
+            /* чтобы центрирование было видно */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__added {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            width: 652px;
+        }
+
+        &-card {
+            position: relative;
+            display: flex;
+            width: 652px;
+            height: 306px;
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+
+            &__img {
+                max-width: 262px;
+            }
+
+            &__name {
+                display: block;
+                width: 280px;
+                padding: 22px 0 42px 31px;
+                color: #222;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                &:hover {
+                    color: $colorSelectSite;
+                }
+            }
+
+            &__text {
+                padding-left: 32px;
+                padding-bottom: 6px;
+                color: #575757;
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                &_select-color {
+                    margin-left: 8px;
+                    color: #EF5B70;
+                }
+
+                &_select-text {
+                    margin-left: 8px;
+                    color: #6F6E6E;
+                }
+
+                &_count {
+                    width: 44px;
+                    height: 25px;
+                    box-sizing: border-box;
+                    text-align: center;
+                    color: #656565;
+                    font-size: 18px;
+                    border: 1px solid #EAEAEA;
+                    margin-left: 24px;
+                }
+            }
+
+            &__close {
+                position: absolute;
+                top: 22px;
+                right: 28px;
+                border: none;
+                background: none;
+
+                &:hover path {
+                    fill: $colorSelectSite;
+                }
+            }
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 32px;
+            margin-bottom: 128px;
+        }
+
+        &__button {
+
+            &_style {
+                padding: 17px 40px;
+                border: 1px solid #A4A4A4;
+                background-color: #fff;
+                color: #575757;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                &:hover {
+                    color: #FFF;
+                    background-color: #A4A4A4;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    &-adress {
+        width: 360px;
+
+        &__title {
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 20px;
+        }
+
+        &__input {
+            width: 360px;
+            border: 1px solid #A4A4A4;
+            padding: 13px 16px 17px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+
+            &::placeholder {
+                color: #B1B1B1;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &:focus {
+                color: #222;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+        }
+
+        &__button {
+
+            &_style {
+                padding: 11px 15px;
+                margin-top: 3px;
+                border: 1px solid #A4A4A4;
+                color: #4A4A4A;
+                background-color: #fff;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                &:hover {
+                    background-color: #A4A4A4;
+                    color: #FFF;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+    &-buy {
+        margin-top: 57px;
+        margin-bottom: 128px;
+        width: 360px;
+        height: 214px;
+        background-color: #F5F3F3;
+
+        &__subtitle {
+            padding: 39px 34px 12px;
+            text-align: right;
+            color: #4A4A4A;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &__title {
+            padding-right: 37px;
+            padding-bottom: 21px;
+            text-align: right;
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+        }
+
+        &_select-color {
+            color: $colorSelectSite;
+            font-weight: 700;
+        }
+
+        &__line {
+            width: 275px;
+            height: 1px;
+            margin-left: 43px;
+            background-color: #E2E2E2;
+        }
+
+        &__button {
+            &_name {
+                padding: 17px 43px 42px 44px;
+                // border-top: 1px solid #E2E2E2;
+                // width: 275px;
+            }
+
+            &_style {
+                background-color: $colorSelectSite;
+                color: #FFF;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                border: none;
+                width: 273px;
+                height: 50px;
+
+                &:hover {
+                    background-color: #F5F3F3;
+                    color: $colorSelectSite;
+                    border: 2px solid $colorSelectSite;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}

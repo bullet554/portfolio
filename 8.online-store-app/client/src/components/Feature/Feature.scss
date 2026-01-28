@@ -1,0 +1,48 @@
+@use '../../styles/vars' as *;
+
+.feature {
+    margin-top: 96px;
+    height: 340px;
+    position: relative;
+    z-index: 1;
+    background-color: $bgColorSite;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        // width: 100vw;
+        background: $bgColorSite;
+        // margin-left: calc(-50vw + 50%);
+    }
+
+    &__content {
+        text-align: center;
+        width: 360px;
+    }
+
+    &__name {
+        padding-top: 20px;
+        color: #FBFBFB;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__info {
+        padding-top: 16px;
+        color: #FBFBFB;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

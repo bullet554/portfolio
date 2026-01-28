@@ -1,0 +1,60 @@
+.offer {
+  padding-top: 64px;
+  padding-bottom: 97px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.offer__items {
+  position: relative;
+  flex: 1 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  inset: 0;
+  min-height: 260px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offer__items::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background-color: rgba(33, 22, 22, 0.7);
+}
+.offer__subtitle {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.offer__title {
+  position: relative;
+  z-index: 2;
+  color: #F16D7F;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.offer__item-1 {
+  background-image: url(../../assets/img/background/offer-women.jpg);
+}
+.offer__item-2 {
+  background-image: url(../../assets/img/background/offer-men.jpg);
+}
+.offer__item-3 {
+  background-image: url(../../assets/img/background/offer-kids.jpg);
+}
+.offer__item-4 {
+  flex-basis: 100%;
+  min-height: 180px;
+  background-image: url(../../assets/img/background/offer-accesories.jpg);
+}/*# sourceMappingURL=Offer.css.map */

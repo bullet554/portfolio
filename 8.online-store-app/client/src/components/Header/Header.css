@@ -1,0 +1,208 @@
+.top {
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+  background-color: #222;
+  height: 75px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__left {
+  display: flex;
+  gap: 41px;
+  align-items: baseline;
+}
+.header__right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 33px;
+}
+
+.menu {
+  width: 232px;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+  z-index: 2000;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  will-change: transform, opacity;
+}
+.menu.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.menu__heading {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+.menu__subheading {
+  color: #F16D7F;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+.menu__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  list-style-type: none;
+  padding-left: 20px;
+}
+.menu__link {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.menu__link:hover {
+  color: #F16D7F;
+}
+
+.auth-menu {
+  width: 232px;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  padding: 32px;
+  box-sizing: border-box;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+  z-index: 2000;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  will-change: transform, opacity;
+}
+.auth-menu.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.auth-menu__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auth-menu__input {
+  padding: 12px;
+  border: 1px solid #D8D8D8;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.auth-menu__input:focus {
+  outline: none;
+  border-color: #F16D7F;
+}
+.auth-menu__button {
+  background: #F16D7F;
+  color: #FFF;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+.auth-menu__button:hover {
+  color: #F16D7F;
+  background: #fff;
+  border: 2px solid #F16D7F;
+  padding: 10px;
+}
+.auth-menu__link {
+  margin-top: 16px;
+  text-align: center;
+  color: #F16D7F;
+  font-size: 14px;
+  font-weight: 400;
+}
+.auth-menu__link a {
+  text-decoration: none;
+  color: inherit;
+}
+.auth-menu__link a:hover {
+  text-decoration: underline;
+}
+
+.auth-menu_logged {
+  padding: 32px;
+  width: 232px;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+  z-index: 2000;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  will-change: transform, opacity;
+}
+.auth-menu_logged.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+.auth-menu_logged__user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.auth-menu_logged__greeting {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.auth-menu_logged__button_logout {
+  background-color: #F16D7F;
+  color: #FFF;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+.auth-menu_logged__button_logout:hover {
+  background-color: #fff;
+  color: #F16D7F;
+  border: 2px solid #F16D7F;
+  padding: 10px;
+}
+
+.auth-error {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: center;
+}/*# sourceMappingURL=Header.css.map */
