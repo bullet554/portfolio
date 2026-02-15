@@ -7,8 +7,6 @@ import AddTodo from './component/AddTodo';
 import TodoList from './component/TodoList';
 import TodoFilter from './component/TodoFilter';
 import ThemeSwitcher from './component/ThemeSwitcher';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles/index.css';
 
 function App() {
   const dispatch = useDispatch();
@@ -24,17 +22,19 @@ function App() {
   }
 
   return (
-    <div className={`app ${theme} container mt-4`}>
-      <div className='app__title'>
-        <h2>Список задач:</h2>
-        <ThemeSwitcher />
-      </div>
+    <div className={`app ${theme}`}>
+      <div className="container mt-4">
+        <div className='app__title'>
+          <h2>Список задач:</h2>
+          <ThemeSwitcher />
+        </div>
 
-      <FilterProvider>
-        <AddTodo />
-        <TodoFilter />
-        <TodoList />
-      </FilterProvider>
+        <FilterProvider>
+          <AddTodo />
+          <TodoFilter />
+          <TodoList />
+        </FilterProvider>
+      </div>
     </div>
   );
 }
