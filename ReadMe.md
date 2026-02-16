@@ -81,4 +81,4 @@
 ## Контакты
 * Email: ilya.karpov.93@mail.ru
 * GitHub: https://github.com/bullet554
-* Phone: +79372382299
+* Phone: +79372382299 (WhatsApp, Telegram)
