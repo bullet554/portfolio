@@ -72,7 +72,7 @@ git clone https://github.com/bullet554/portfolio.git
 ```
 2. Перейдите в директорию сервера:
 ```
-cd ./6.todo-list-react/server/
+cd ./3.todo-list-react/server/
 ```
 3. Установите зависимости:
 ```

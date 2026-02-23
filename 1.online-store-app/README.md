@@ -98,7 +98,7 @@ git clone https://github.com/bullet554/portfolio.git
 ```
 2. Серверная часть:
 ```
-cd 8.online-store-app/server
+cd 1.online-store-app/server
 npm install
 npm run start
 ```
@@ -108,7 +108,7 @@ http://localhost:3001
 ```
 4. Клиентская часть:
 ```
-cd 8.online-store-app/client
+cd 1.online-store-app/client
 npm install
 npm start
 ```

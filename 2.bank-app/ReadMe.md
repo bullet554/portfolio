@@ -59,7 +59,7 @@ git clone https://github.com/bullet554/portfolio.git
 ```
 2. Перейдите в директорию проекта:
 ```
-cd ./5.bank-app/
+cd ./2.bank-app/
 ```
 3. Установите зависимости:
 ```
