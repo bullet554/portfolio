@@ -27,7 +27,7 @@ const Product = () => {
             .then(response => response.json())
             .then(data => setOfferProducts(data))
             .catch(error => console.error('Error:', error));
-    }, [id]); // get offer products
+    }, [id]);
 
     if (!product) {
         return <Loader />;
@@ -43,11 +43,11 @@ const Product = () => {
   }
 
   try {
-    await addToCart(product, 1, null, null); // <-- передаём сам product
+    await addToCart(product, 1, null, null);
     alert("Product added to cart");
   } catch (error) {
     console.error("Add to cart error:", error);
-    alert("Failed to add product to cart"); // вренменно
+    alert("Failed to add product to cart");
   }
 };
 

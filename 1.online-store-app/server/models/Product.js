@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js';
 import { config } from 'dotenv';
 
 config({
-    path: '.env', // Явно указываем путь
+    path: '.env',
     debug: process.env.DEBUG // Для отладки (опционально)
 });
 

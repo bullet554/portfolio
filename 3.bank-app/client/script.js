@@ -129,7 +129,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateBalance();
                 showMessage('Регистрация успешна!', 'success');
 
-                // Скрываем форму авторизации после регистрации
                 authForm.style.display = 'none';
             } else {
                 showMessage(data.message, 'error');

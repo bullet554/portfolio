@@ -7,14 +7,13 @@ export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
 
     const login = async ({ email, password }) => {
-        const res = await authApi.login({ email, password }); // POST /api/auth/login
-        // ожидаем { token, user: { id, email, firstName, lastName } }
+        const res = await authApi.login({ email, password });
         const { token, user } = res.data;
 
         localStorage.setItem('token', token);
         setUser(user);
 
-        return user; // удобно для UI
+        return user;
     };
 
     const logout = () => {

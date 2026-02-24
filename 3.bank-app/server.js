@@ -9,7 +9,7 @@ const PORT = 3001;
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'client')));
 
 const USERS_FILE = path.join(__dirname, 'usersData.json');
 

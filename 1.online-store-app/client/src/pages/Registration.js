@@ -27,7 +27,6 @@ const Registration = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Валидация данных
         let validationErrors = {};
 
         if (!formData.firstName) {

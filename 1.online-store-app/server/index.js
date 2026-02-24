@@ -8,12 +8,11 @@ import productRoutes from './routes/products.js';
 import cartRoutes from './routes/cart.js';
 import userRouter from './routes/users.js';
 
-// Настройка путей для ES‑модулей
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 config({
-    path: '.env', // Явно указываем путь
+    path: '.env',
     debug: process.env.DEBUG // Для отладки (опционально)
 });
 

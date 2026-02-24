@@ -29,7 +29,7 @@ router.post('/register', async (req, res) => {
                 {
                     email,
                     password: hashedPassword,
-                    first_name: firstName, // Используем корректное имя поля
+                    first_name: firstName,
                     last_name: lastName,
                     gender,
                 }

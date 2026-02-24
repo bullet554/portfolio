@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import { config } from 'dotenv';
 
 config({
-    path: '.env', // Явно указываем путь
+    path: '.env',
     debug: process.env.DEBUG // Для отладки (опционально)
 });
 

@@ -3,22 +3,18 @@ import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
 import { validationResult } from 'express-validator';
 
-// Константы
 const SALT_ROUNDS = 10;
 const JWT_SECRET = process.env.JWT_SECRET;
 
 export const register = async (req, res) => {
-    // Валидация входящих данных
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
     }
 
     try {
-        // Хеширование пароля
         const hashedPassword = await bcrypt.hash(req.body.password, SALT_ROUNDS);
 
-        // Создание пользователя
         const { user, error } = await User.register({
             email: req.body.email,
             password: hashedPassword
@@ -28,7 +24,6 @@ export const register = async (req, res) => {
             return res.status(400).json({ error: error.message });
         }
 
-        // Генерация токена
         const token = jwt.sign({ userId: user.id }, JWT_SECRET, { expiresIn: '1h' });
 
         res.status(201).json({
@@ -45,7 +40,6 @@ export const register = async (req, res) => {
 };
 
 export const login = async (req, res) => {
-    // Валидация входящих данных
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
@@ -61,13 +55,11 @@ export const login = async (req, res) => {
             return res.status(401).json({ error: error.message });
         }
 
-        // Проверка пароля
         const isValid = await bcrypt.compare(req.body.password, user.password);
         if (!isValid) {
             return res.status(401).json({ error: 'Invalid credentials' });
         }
 
-        // Генерация токена
         const token = jwt.sign({ userId: user.id }, JWT_SECRET, { expiresIn: '1h' });
 
         res.json({

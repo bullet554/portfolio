@@ -15,10 +15,6 @@ const Cart = () => {
 
     const isLoading = !Array.isArray(cart);
 
-    // if (!Array.isArray(cart)) {
-    //     return <div>Загрузка корзины...</div>;
-    // }
-
     const total = cart.reduce((acc, item) => {
         if (item && item.price) {
             return acc + item.quantity * item.price;
@@ -82,21 +78,6 @@ const Cart = () => {
                                 ))}
                             </>
                         )}
-
-                        {/* {cart.length === 0 ? (
-                            <div>The shopping cart is empty</div>
-                        ) : (
-                            <>
-                                {cart.map((item) => (
-                                    <CartCard
-                                        key={item.id}
-                                        cartItem={item}
-                                        onQuantityChange={handleQuantityChange}
-                                        onRemove={handleRemove}
-                                    />
-                                ))}
-                            </>
-                        )} */}
 
                         <div className="cart-product__buttons">
 
