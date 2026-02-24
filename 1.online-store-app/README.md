@@ -1,4 +1,4 @@
-# # Online Store — Fullstack E-commerce App
+# Online Store — Fullstack E-commerce App
 
 ## О проекте
 Fullstack интернет-магазин с клиентской частью на React и серверной частью на Node.js + Express.
