@@ -148,4 +148,4 @@ Junior Fullstack Developer (React, Node.js)
 ## Контакты
 Email: ilya.karpov.93@mail.ru<br>
 GitHub: https://github.com/bullet554<br>
-Phone: +79372382299 (WhatsApp, Telegram)
+Phone: +79372382299 (WhatsApp, Telegram, Max)
