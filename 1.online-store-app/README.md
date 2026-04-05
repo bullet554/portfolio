@@ -5,9 +5,9 @@ Fullstack интернет-магазин с клиентской частью �
 
 Реализована аутентификация пользователей, работа с корзиной, фильтрация и сортировка каталога, взаимодействие с PostgreSQL (Supabase) через REST API.
 
-Проект демонстрирует навыки разработки клиент-серверных приложений, управления состоянием на frontend и организации backend-логики.
+Проект делал как fullstack-приложение с разделением frontend и backend.
 
-## 📸 Screenshots
+## Screenshots
 
 ### Главная страница с выпадающим меню
 ![Home page](./screenshots/home+menu.png)
@@ -28,13 +28,12 @@ Fullstack интернет-магазин с клиентской частью �
     * **Context API** (AuthContext, CartContext)
     * **Axios**
     * **SCSS (BEM)**
-    * **SPA-навигация**
 * **Backend:**
     * **Node.js**
     * **Express.js**
     * **REST API**
-    * **Supabase (PostgreSQL + Auth)**
-    * **JWT-аутентификация**
+    * **PostgreSQL (Supabase)**
+    * **JWT-аутентификация (реализована на backend)**
 * **Инструменты:**
     * **Git**
     * **Figma (вёрстка по макету)**
@@ -62,10 +61,10 @@ Fullstack интернет-магазин с клиентской частью �
 
 ## Архитектурные решения
 * Разделение frontend и backend (SPA + REST API)
-* Организация backend по слоям (routes → controllers)
-* Отдельный слой services для работы с API
+* Разделение backend на routes и controllers
+* Выделены сервисы для работы с API
 * Управление глобальным состоянием через React Context
-* Асинхронная работа с сервером (CRUD-операции)
+* CRUD-операции через API
 * Обработка ошибок на клиенте и сервере
 
 ## Структура проекта
