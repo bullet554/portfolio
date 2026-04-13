@@ -1,0 +1,13 @@
+import dotenv from "dotenv";
+
+dotenv.config();
+
+export const env = {
+    PORT: process.env.PORT || "5000",
+    DATABASE_URL: process.env.DATABASE_URL || "",
+    JWT_SECRET: process.env.JWT_SECRET || "",
+};
+
+if (!env.DATABASE_URL || !env.JWT_SECRET) {
+    throw new Error("Missing required environment variables");
+}
